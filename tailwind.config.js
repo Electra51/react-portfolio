@@ -6,7 +6,7 @@ module.exports = {
     daisyui: {
     themes: [
       {
-        pickColorTheme: {
+        portTheme: {
           primary: '#4a7887',
           secondary: '#FEF9f6',
           info:'#062029',

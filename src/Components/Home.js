@@ -4,14 +4,15 @@ import Contact from './Contact';
 import Footer from './Footer';
 import Header from './Header';
 import Projects from './Projects';
-import Services from './Services';
+
 
 const Home = () => {
     return (
-        <div>
+        <div className='overflow-x-hidden'>
+            
             <Header></Header>
             <About></About>
-            <Services></Services>
+           
             <Projects></Projects>
             <Contact></Contact>
             <Footer></Footer>

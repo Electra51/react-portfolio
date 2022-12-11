@@ -7,7 +7,7 @@ import Skills from './Skills';
 const About = () => {
     const [aboutFilter, setAboutFilter] = useState('ABOUT');
     return (
-        <div className='my-20'>
+        <div className='my-20' id='About'>
             <h2 className='font-semibold'>Who am I?</h2> 
             <h2 className='text-3xl font-bold'>About Me</h2>
             <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 mt-6 items-center'>

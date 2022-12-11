@@ -21,7 +21,7 @@ const Contact = () => {
       }
    
     return (
-        <div className='mt-20' id='contact'>
+        <div className='mt-12' id='contact'>
              
           
             <div className="hero-content text-center">

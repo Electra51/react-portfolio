@@ -1,7 +1,7 @@
 import React from 'react';
 import img from '../Assets/images/Safayet_Nur.png'
 import { Typewriter } from 'react-simple-typewriter'
-import { Link } from 'react-router-dom';
+
 import cv from '../Assets/images/Safayet_Nur_Resume.pdf'
 
 const Header = () => {

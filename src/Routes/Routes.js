@@ -1,3 +1,6 @@
+import Blogs from "../Components/Blogs";
+import Details from "../Components/Details";
+
 import Home from "../Components/Home";
 import Main from "../LayOuts/Main";
 
@@ -11,7 +14,16 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element:<Home></Home>
-          }
+          },
+          {
+            path: '/project/:id',
+            element: <Details></Details>,
+            loader: ({params}) => fetch(`http://localhost:5000/projects/${params.id}`),
+          },
+          {
+            path: '/blogs',
+            element:<Blogs></Blogs>
+      },
       ]
     },
 ]);
