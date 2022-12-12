@@ -7,7 +7,7 @@ import cv from '../Assets/images/Safayet_Nur_Resume.pdf'
 const Header = () => {
     
     return (
-        <div className='text-center'>
+        <div className='text-center mt-20'>
             <h2 className='font-semibold'>Hello I'm</h2> 
             
             <h2 className='text-3xl font-bold'>Safayet Nur</h2>
@@ -27,7 +27,7 @@ const Header = () => {
             <br />
             <div className='flex gap-4 justify-center'>
                 
-                <a href=""><button className='btn btn-outline'>Let's Start</button></a>
+                <a href="#About"><button className='btn btn-outline'>Let's Start</button></a>
                 <a href={cv} download><button className='btn btn-primary'>Download Resume</button></a>
             </div>
             <br />

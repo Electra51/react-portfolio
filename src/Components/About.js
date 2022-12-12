@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import AboutMe from './AboutMe';
 import Courses from './Courses';
 import Education from './Education';
-import Skills from './Skills';
+import Skills from './Activities';
 
 const About = () => {
     const [aboutFilter, setAboutFilter] = useState('ABOUT');
@@ -17,8 +17,8 @@ const About = () => {
                     <button className='btn btn-primary w-full' onClick={()=>setAboutFilter('ABOUT')}>About</button>
                     
                     <button className='btn btn-primary w-full mt-3'  onClick={()=>setAboutFilter('EDUCATION')}>Education</button><br />
-                    <button className='btn btn-primary w-full mt-3'  onClick={()=>setAboutFilter('SKILLS')}>Skill</button><br />
-                    <button className='btn btn-primary w-full mt-3'  onClick={()=>setAboutFilter('COURSES')}>Courses</button>
+                    <button className='btn btn-primary w-full mt-3'  onClick={()=>setAboutFilter('ACTIVITIES')}>Club Activities</button><br />
+                    <button className='btn btn-primary w-full mt-3'  onClick={()=>setAboutFilter('COURSES')}>Achievements</button>
                 </div>
                 <div className="col-span-2  align-middle"  data-aos="fade-left">
                     {
@@ -28,7 +28,7 @@ const About = () => {
                         aboutFilter==='EDUCATION' && <Education></Education>
                     }
                           {
-                        aboutFilter==='SKILLS' && <Skills></Skills>
+                        aboutFilter==='ACTIVITIES' && <Skills></Skills>
                     }
                            {
                         aboutFilter==='COURSES' && <Courses></Courses>

@@ -18,7 +18,7 @@ const Navbar = () => {
             document.querySelector('html').setAttribute('data-theme', 'dark')
         }
         else {
-            document.querySelector('html').setAttribute('data-theme', 'pickColorTheme')
+            document.querySelector('html').setAttribute('data-theme', 'portTheme')
         }
     }, [dark])
 
